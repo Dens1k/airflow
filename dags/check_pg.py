@@ -13,7 +13,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 LOCAL_TZ = pendulum.timezone('Europe/Moscow')
 
 args = {
-    'owner': 'imatveev',
+    'owner': 'levinskiy',
     'start_date': datetime(2023, 1, 1, tzinfo=LOCAL_TZ),
     'catchup': True,
     'retries': 3,
