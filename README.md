@@ -9,7 +9,7 @@
 0. Установить docker, python, dbeaver или использовать venv со всем окружением. 
 
 1. Скопировать мой репозиторий:
-git clone https://github.com/fridaytmn/ airflow_project.git
+git clone https://github.com/Dens1k/airflow.git
 
 2. Инициализировать и запустить контейнеры:
 docker-compose build
