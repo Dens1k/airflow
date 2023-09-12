@@ -26,7 +26,7 @@ _Тех стек: Airflow, docker, postgre_
 3. Зайти в postgre/Airflow:
 ``````
     - Зайти в БД ny_taxi с логином и паролем "root" и создать таблицу из sql_scritps > ddl > yellow_taxi_data.sql
-    - Запустить DAG "IngestionDag", check_pg. Таблица должна быть ~2.2 GB
+    - Запустить http://localhost:8080, а затем DAG "IngestionDag", check_pg. Таблица должна быть ~2.2 GB
     - Затем скрипт sql_scritps > dml > cost_ride.sql
 ``````
 4. Не забудьте насладиться и отключить соединение ;) 
