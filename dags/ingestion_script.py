@@ -1,12 +1,17 @@
 import pandas as pd
 import pyarrow.parquet as pq
 from sqlalchemy import create_engine
-
 from time import time
+from decouple import config
+
+USER=config('PG_USER')
+PASS=config('PG_PASS')
+DB=config('PG_DB')
+PORT=config('PG_PORT')
 
 
 def ingest_data(table_name, pq_file):
-    engine = create_engine(f"postgresql://root:root@de_postgres:5432/ny_taxi")
+    engine = create_engine(f"postgresql://{PG_USER}:{PG_PASS}@de_postgres:{PG_PORT}/{PG_DB}")
     parquet_file = pq.ParquetFile(pq_file)
 
     for batch in parquet_file.iter_batches(batch_size=100000):

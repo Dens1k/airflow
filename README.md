@@ -1,4 +1,4 @@
-####Друзья, привет! Перед вами учебный проект по использованию новых ETL-инструментов. 
+Всем привет! Перед вами проект по использованию новых ETL-инструментов. 
 ---
 _Тех стек: Airflow, docker, postgre_
 
@@ -19,9 +19,9 @@ _Тех стек: Airflow, docker, postgre_
 
 2. Инициализировать и запустить контейнеры:
 ``````
-    - docker-compose build
-    - docker-compose up airflow-init
-    - docker-compose up -d 
+    - docker-compose build сборка проекта
+    - docker-compose up airflow-init ##создание уч/з
+    - docker-compose up -d ##запуск проекта
 ``````
 3. Зайти в postgre/Airflow:
 ``````
@@ -29,4 +29,4 @@ _Тех стек: Airflow, docker, postgre_
     - Запустить http://localhost:8080, а затем DAG "IngestionDag", check_pg. Таблица должна быть ~2.2 GB
     - Затем скрипт sql_scritps > dml > cost_ride.sql
 ``````
-4. Не забудьте насладиться и отключить соединение ;) 
+4. Не забудьте насладиться и отключить соединение ;)
